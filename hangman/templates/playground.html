@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+ 
+ <section class="playground">
+    <h1 class="ply-title"><span>H</span>angman.</h1>
+   
+        
+        
+        
+    <!-- <a href="#" class="ply-title"><span>H</span>angman.</a> -->
+      <!-- {% for message in messages %} 
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert" >
+            <strong class="msg"> Message :</strong> -->
+              <h3 class="msg1">{{ message }}</h3> 
+
+                <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">  
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>  -->
+        <!-- {% endfor %} -->
+        
+        <!-- This section will print output on the last page of game -->
+        
+        <section class="scbord">    
+            <!-- <h3 class="msg1">{{ messages }} </h3> -->
+        {% if messages %} 
+           {% for message in messages %}
+             {% if message.tags == "error"%} 
+               <div class="printScore"> <h3>Total Score :<span>{{score}}</span></h3> </div>
+               <div class="printLevel"> <h3>Level Reached :<span>{{level}}</span></h3></div>
+            {% else %} 
+            <div class="printScore"> <h3>Score :<span>{{score}}</span></h3> </div>
+            <div class="printLevel"> <h3>Level :<span>{{level}}</span></h3></div>
+             {% endif %}
+           {% endfor %}
+        {% else %} 
+        <div class="printScore"> <h3>Score :<span>{{score}}</span></h3> </div>
+        <div class="printLevel"> <h3>Level :<span>{{level}}</span></h3></div>
+        {% endif %}
+
+    </section>
+        {% block content1 %} 
+       
+        {% endblock %}
+
+        
+        <div class="out-btn-sec">
+            
+            <form id ="restart" action="/Game/play" method="POST">
+                {% csrf_token %}
+
+             {% if messages %}
+                 {% for message in messages %}
+                    {% if message.tags == "error"%}
+                        <button class="button1",type="submit" id="play-sub-btn" >Restart</button>
+                    {% else %} 
+                    <button class="button1",type="submit" id="play-sub-btn" > New Word</button>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <button class="button1",type="submit" id="play-sub-btn" > New Word</button>
+            {% endif %}
+            </form> 
+           
+            <!-- <form id ="restart" action="/home" method="POST">
+                {% csrf_token %}
+            <button type="submit" > Home</button>
+           </form> -->
+            <form id ="restart" action="/home" method="POST">
+                {% csrf_token %}
+            <button class="button1" type="submit" > Exit</button>
+           </form> 
+
+   <!-- <input type="text" value="Blabla" id="myInput">  -->
+        </div>
+        
+
+
+    </section>
+{% endblock %}

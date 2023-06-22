@@ -1,0 +1,363 @@
+/* @font-face {
+    font-family: Poppins;
+    src: url(Poppins);
+} */
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    /* border: 2px solid black; */
+}
+.sticky
+{
+    background: #ede4e4;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+.sticky .logo
+{
+    color: #111;
+}
+header .logo span
+{
+    color: #d90505;
+
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+
+}
+header .navigation .active
+{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+
+}
+
+header .navigation li a:hover
+{
+    color: #d30c23;
+}
+.sticky .navigation li a
+{
+    color: #111;
+}
+/* section{
+    padding: 100px;
+} */
+.banner
+{
+    padding: 100px;
+}
+.base-body
+{
+    /* min-height: 1000px; */
+    height: auto;
+    background-color: rgb(41, 2, 41);
+    /* background-color: rgb(218, 34, 218); */
+    /* display: flex; */
+    
+    /* background-color: rgb(210, 16, 210); */
+    /* background: rgb(2,0,36);
+    background: linear-gradient(140deg, rgb(2, 1, 9) 0%, rgb(47, 18, 48) 45%, rgba(0,212,255,1) 90%, rgb(233, 242, 244) 100%); */
+    /* background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/hangman_pic.png);
+    background-size: cover;
+}
+/* CSS for index.html */
+.sec1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 50px;
+    /* background-color: aqua; */
+}
+.sec1 h1
+{
+    color: #fff;
+}
+.sec1 .auth-sec
+{
+  margin-left: 20px;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  /* background-color: aqua; */
+  border: 2px solid white;
+  /* border-radius: 5px; */
+  border-radius: 30px 0px 30px 0px ;
+
+
+}
+
+.sec1 .auth-sec button
+{
+    padding: 10px;
+    margin: 20px;
+    /* text-decoration: none; */
+    font-size: 20px;
+    background-color: rgb(65, 29, 150);
+    border: 2px solid rgb(12, 1, 1);
+    border-radius: 10px;
+
+}
+.sec1 .auth-sec button a
+{
+    text-decoration: none;
+    color:white;
+    font-weight: 10px;
+    /* padding: 20px; */
+
+}
+.sec1 .auth-sec button :hover
+{
+    /* border: 3px solid white; */
+    border-color: rgb(232, 232, 241);
+    transition: 1s;
+    /* opacity: 0.; */
+    color:aqua ;
+
+
+    /*color:white;
+    background-image: linear-gradient(to left,rgb(29, 150, 65) 0%, #330867 100%); */
+   
+}
+
+.sec1 .auth-sec h2
+{
+    color: rgb(172, 210, 244);
+}
+.title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 10px;
+}
+.title h1 span
+{
+
+    color: #d90505;
+
+}
+.sec1 .play-btn-sec
+{
+    /* background-color: aqua; */
+    padding: 40px;
+    /* margin-left: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: row-reverse;
+    border: 2px solid white;
+    border-radius: 30px 0px 30px 0px ;
+    margin: 20px;
+
+}
+.sec1 .play-btn-sec h3
+{
+    color: #fff;
+}
+.sec1 .play-btn-sec button
+{
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(29, 150, 65);
+}
+.sec1 .play-btn-sec button:hover
+{
+    /* background-color: rgb(25, 238, 238); */
+    transition: 1s;
+    border-color: rgb(232, 232, 241);
+    color:white;
+    background-image: linear-gradient(to left,rgb(29, 150, 65) 0%, #330867 100%);
+
+}
+.sec1 .play-btn-sec button a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sec1 p
+{
+    color: white;
+}
+
+@media(max-width:600px)
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+      width: 100%;
+      height: calc(100% - 68px);
+      position: fixed;
+      top:68px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background:#650648;
+    }
+    header .navigation li {
+        
+        margin-left:0;
+    }
+    header .navigation li a {
+        color:white;
+        font-size: 1.6em;
+    }
+    header .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header .menuToggle.active
+    {
+        background: url(images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .sticky .menuToggle
+    {
+      filter:invert(1);
+    }
+    .banner
+    {
+        position: relative;
+        width: 100%; 
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background: url(images/hangman_pic2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sec1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 17px;
+        /* background-color: aqua; */
+    }
+    .sec1 .play-btn-sec
+    {
+        /* background-color: aqua; */
+        padding: 20px;
+        /* margin-left: 40px; */
+        display: flex;
+        align-items: center;
+        justify-content: column;
+        margin-right: 20px;
+
+    }
+    .sec1 .play-btn-sec h3 
+    {
+        text-overflow: unset;
+        font-size: 15px;
+    }
+    .auth-sec  button
+    {
+        padding: 8px;
+        margin: 8px;
+        /* border: 2px solid black; */
+    }
+    .auth-sec h2 
+    {
+        font-size: 20px;
+    }
+    .title
+    {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; */
+    margin-left: 30px;
+    }
+    .button1
+    {
+        min-width: 50px;
+        min-height: 10px;
+    }
+   
+    /* @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        img { max-width: 100%; }
+    } */
+}

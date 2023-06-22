@@ -1,0 +1,48 @@
+{%extends 'base.html'%}
+{% block content%}
+
+<section class="signin ">
+    <h1 class="heading"> SignUp</h1>
+    <form  class="signup" id="form1" action="/signup" method="post">
+    {% csrf_token %}
+       
+        
+
+        <div class="FnameLname"> 
+            <div class="m1">
+                <label for=" ">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter first name" required>
+            </div>
+            
+            <div class="m1">
+                <label for=" ">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="last name" required>
+            </div>
+        </div>
+
+        <div class="FnameLname"> 
+            <div class="m1">
+                <label for=" ">Username</label>
+                <input type="text" id="username" name="username" placeholder="create username[only letter]" required>
+            </div>
+       
+            <div class="m1">
+                <label for=" ">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" required>
+            </div>
+    </div>
+       
+        <div class="m1">
+        <label for=" ">Password</label>
+        <input type="password" id="pass1" name="password" placeholder="Enter password" required>
+        </div>
+        <!-- <div class="m1">
+        <label for=" ">Confirm your password </label>
+        <input type="password" id="pass2" name="password" placeholder="Enter password" required>
+        </div> -->
+
+        <button class="sub-btn button1" type="submit">SignUp</button>
+    
+    </form>
+</section>
+{% endblock%}

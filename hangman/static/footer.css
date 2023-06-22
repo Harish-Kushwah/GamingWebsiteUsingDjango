@@ -1,0 +1,53 @@
+footer
+{
+    position: relative;
+    bottom: auto;
+    width:100%;
+    /* padding: 40px 100px; */
+    /* z-index: 1000; */
+    display: flex;
+    justify-content: space-between;
+    align-self:stretch;
+    transition: 0.5s;
+}
+
+.foot1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(99, 213, 104);
+    height: 18vh;
+}
+.foot1 .logo
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+.foot1 .logo span
+{
+    color: #d90505;
+
+}
+.copyrightText
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top:0px;
+}
+
+.copyrightText p
+{
+  color:#f8f1f1
+}
+.copyrightText a
+{
+  color:#ff0157;
+  font-weight:500;
+  text-decoration: none;
+
+}

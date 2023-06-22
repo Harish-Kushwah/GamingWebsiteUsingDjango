@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+     <!-- <link rel="stylesheet" href="{% static 'basestye.css' %}">-->
+    <link rel="stylesheet" href="/static/basestyle.css">
+    <link rel="stylesheet" href="/static/signin.css">
+    <link rel="stylesheet" href="/static/playground.css">
+    <link rel="stylesheet" href="/static/footer.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="base-body"> 
+
+    <header>
+        <a href="#" class="logo"><span>H</span>angman.</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="/home"  onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="#contact"  onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    
+    <!-- This is for the content of other website -->
+    
+
+     {% block content %}  
+     {% endblock %} 
+
+     <!-- <footer class="foot1" >
+        <a href="#" class="logo"><span>H</span>angman.</a>
+        <h3>Copyright &copy Hangman</h3>
+     </footer>  -->
+     <div class="copyrightText">
+        <p>Copyright 2023 <a href="#">Hangman</a>.All Right Reserved</p>
+    </div>
+   
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            const menuToggle=document.querySelector('.menuToggle');
+            const navigation=document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

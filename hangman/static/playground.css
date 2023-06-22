@@ -1,0 +1,415 @@
+.playground
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin: auto; */
+    /* background-color: rgb(166, 212, 216); */
+    /* background-color:white;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); */
+    margin: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+    background: linear-gradient(160deg, rgb(8, 2, 47) 30%, rgb(46, 15, 47) 50% );
+     
+}
+.playground .ply-title
+{
+    color: aliceblue;
+    padding: 8px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 15px;
+}
+.playground .ply-title span
+{
+    color: #d90505;
+}
+.playing-area
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    max-width: 80vw;
+    /* height: 50vh; */
+    height: 50vh;
+    content: wrap;
+    margin: auto;
+    /* background-color:#ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); */
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    /* backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); */
+}
+.playing-area .hint
+{
+    align-self: center;
+    border: 2px solid rgb(21, 24, 21);
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    color: rgb(205, 8, 38);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    font-size: 1rem;
+    /* text-shadow: 2px 2px 10 white; */
+}
+.playing-area .hint span
+{
+    color: rgb(11, 5, 46);
+    /* background-color: #101110; */
+
+    
+}
+.playing-area #word
+{
+    margin: 10px;
+    padding: 5px;
+    height: 35px;
+    /* margin-left: 20px; */
+    /* background-color: #101110; */
+
+
+}
+.playing-area .btn-sec
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+}
+.playing-area button
+{
+    margin: 10px;
+    width: 15vw;
+    height: 35px;
+    background-color: #5f5fdb;
+    color: white;
+    border: 2px solid rgb(20, 19, 19);
+    border-radius: 8px;
+
+}
+.ply-inp-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #101110; */
+    /* margin-top: 40px; */
+}
+.ply-inp-sec input
+{
+    border: 2px solid rgb(29, 20, 20);
+    border-radius: 8px;
+    background-color: #bdd4bf;
+    color: #151b16;
+    font-size: 15px;
+
+}
+.ply-inp-sec label
+{
+    font-size: 20px;
+    /* font-weight: 100px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #020219;
+    /* box-shadow: 2px 2px 10px rgb(210, 229, 182); */
+}
+.box
+{
+    display: flex;
+    align-items: center;           
+    justify-content: space-between;
+    /* background-color: bisque; */
+    width: 95%;
+    /* min-width: 70%; */
+    /* max-width: 70%; */
+    padding: 5px;
+    margin: 20px;
+    /* box-shadow: 2px 2px  20px rgb(218, 98, 98); */
+    /* border-radius: 3px; */
+
+}
+
+/* .box .inp
+{
+    
+    height: 20px;
+    margin: 2px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: rgb(87, 21, 21);
+    box-shadow: 10px 210px 10px;
+} */
+.scr-word
+{
+    color: blue;
+    /* border: 2px solid rgb(15, 13, 13); */
+    /* width: 5%
+    height: 5vh; */
+    margin: 2px;
+    font-size: 30px;
+    text-align: center;
+    /* padding: 2px; */
+}
+
+.out-btn-sec
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin: 20px;
+    padding: 10px; */ 
+    /* width: 100%;  */
+    /* min-width: 32%;
+    max-width: 80%; */
+    width: 40vw;
+    flex-wrap:wrap;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+
+} 
+.out-btn-sec button
+{
+   
+    margin: 10px;
+    /* width: 15vh; */
+    /* height: 35px;
+    min-width: 35px; */
+    
+    height: 35px;
+    /* min-width: 40px;  */
+    /* width: 30%; */
+    width: 15vw;
+    background-color: rgb(2, 11, 47);
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    padding: 3px;
+
+}
+
+.msg
+{
+    color: white;
+}
+
+.msg1
+{
+    color: #92FE9D;
+}
+
+.scbord
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+    /* background-color: #fedf92; */
+    /* border: 2px solid white; */
+    /* margin: 8px; */
+    /* min-width: 10vh; */
+    width: 35%;
+    min-height: 10px;
+    padding: 20px;
+    padding-bottom: 10px;
+    
+    /* height: ; */
+}
+.printScore
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    margin: 5px;
+    /* margin-left:5px ; */
+    padding: 2px;
+    /* background-color: #00C9FF;*/
+    /* border: 2px solid burlywood; */
+
+}
+.printLevel
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    margin: 5px;
+    /* margin-left:5px ; */
+    padding: 2px;
+    /* background-color: #00C9FF;*/
+    /* border: 2px solid burlywood; */
+
+}
+
+.printScore h3
+{
+    text-shadow: 2px 2px 10px red;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.printLevel h3
+{
+    text-shadow: 2px 2px 10px red;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+.printScore h3 span
+{
+    color: #d90505;
+}
+.printLevel h3 span
+{
+    color: #29c32c;
+}
+.scbord .printLevel,.printScore h3
+{
+    color: #e6f1e7;
+}
+
+@media screen  and (max-width:600px) 
+{
+    .playground
+    {
+        /* width: 60vh; */
+        /* margin-right: 10px; */
+        /* justify-content: center; */
+        /* /* display: block; */
+        margin: auto;
+        margin-top: 80px;
+
+        /* display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin-top: 20px; */
+    }
+
+    
+    .playing-area
+    {
+        width:100%;
+        /* display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap; */
+        /* margin-top: 20px; */
+        padding: 10px;
+        min-height: 400px;
+        
+    }
+    .playing-area .hint
+    {
+        width:100%;
+        /* height: 10%; */
+        /* margin-top: 50px; */
+        position:sticky;
+        display: flex;
+        justify-content: center;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        font-size: 90%;
+    }
+    .box
+    {
+        /* width: 40vh; */
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top:10px;
+    }
+    .box .scr-word
+    {
+        width: 5%;
+        margin: 1px;
+    }
+    .box .h1
+    {
+        width: 5%;
+    }
+    .out-btn-sec
+    {
+        margin: auto;
+        width: 80vw;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+    }
+    .out-btn-sec .button1
+    {
+        /* width: 5vw; */
+        height: 40px;
+        width: 25vw;
+    }
+    .ply-inp-sec
+    {
+        width: 100%;
+        /* position: sticky;
+        bottom: 0; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+    }
+    .ply-inp-sec .button1
+    {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .ply-inp-sec input
+    {
+       width:50vw;
+    }
+    
+    .playing-area .btn-sec
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        /* position: fixed; */
+        /* bottom: 0; */
+        width: 80vw;
+    }
+    .button1
+    {
+        min-width: 50px;
+        min-height: 10px;
+    }
+    .scbord
+    {
+        width: 95%;
+    }
+
+    
+}

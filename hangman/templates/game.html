@@ -1,0 +1,52 @@
+{% extends "playground.html" %}
+
+   {% block content1 %}    
+    <section class="playing-area">
+        <div class="hint">
+            <h2 ><span>Hint : </span>{{ des }} </h2><br>
+        </div>
+         
+        <!-- <h2 class="hint"><span>Hint : </span>{{ des }} </h2><br> -->
+        <!-- <h1> Data :{{ name }} id :{{ id }} <h1>     -->
+        <form id="wordinput" action="/validate" method="post"> 
+            <!-- <h1>{{hide}}</h1>  -->
+            {% csrf_token %}
+                <section class="box">  
+                    
+                    {% for i in name %}
+                        {% if i  in hide %}
+                         <!-- <input type="text" id="wordin" name="wordin" >  -->
+                        <h1 style="margin: 10px;"> __ </h1>
+                        {% else %}
+                        
+                        <div class="scr-word">{{i}} </div>
+                        {% endif %}
+                        
+                    {% endfor %}
+                </section>
+
+            <section class="ply-inp-sec">
+                <label>Enter Word :</label>
+                <input type="text" id="word" class="inp" name="word" autocomplete="off" required>  
+            </section>
+
+            <input type="key" id="key" name="key" value="{{id}}" hidden>
+            <section class="btn-sec">
+                <button class="button1" type="submit" id="play-sub-btn"> submit</button>
+                <button class="button1" onclick="document.getElementById('word').value = ''">Clear</button>
+            </section>
+          
+            
+        </form>
+         
+        
+    </section>
+   
+
+   
+
+    <!-- <form id="wordinput" action="play" method="post"> 
+     {% csrf_token %}
+    <input type="text" id="wordin" name="wordin" required>
+    </form> -->
+{% endblock %}
